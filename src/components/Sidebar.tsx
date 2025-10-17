@@ -17,7 +17,7 @@ export default function Sidebar() {
   return (
     <aside className="w-64 hidden md:block bg-white border-r border-gray-100 h-[100vh]">
       <div className="h-full flex flex-col px-4 py-6">
-        <div className="mb-6">
+        <div className="mb-6 text-center">
           <div className="text-2xl font-semibold text-gray-900">CycleCore</div>
           <div className="text-xs text-gray-500">Minimal workspace</div>
         </div>
