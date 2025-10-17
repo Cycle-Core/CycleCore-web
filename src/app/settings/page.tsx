@@ -1,20 +1,33 @@
 // src/app/settings/page.tsx
+import React from 'react'
+
 export default function SettingsPage() {
   return (
-    <div className="p-4">
-      <h1 className="text-3xl font-bold text-gray-800 mb-4">Application Settings</h1>
-      <p className="text-gray-600">Manage your application settings here.</p>
-      <form className="mt-4 space-y-4">
-        <div>
-          <label htmlFor="username" className="block text-sm font-medium text-gray-700">Username</label>
-          <input type="text" id="username" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" />
+    <main className="min-h-screen bg-gray-50">
+      <div className="max-w-4xl mx-auto px-6 py-10">
+        <div className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+          <h2 className="text-lg font-medium text-gray-900">Settings</h2>
+          <p className="mt-1 text-sm text-gray-500">Account and workspace preferences</p>
+
+          <div className="mt-6 space-y-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-medium text-gray-900">Workspace name</p>
+                <p className="text-xs text-gray-500">CycleCore</p>
+              </div>
+              <button className="px-3 py-2 rounded-md border border-gray-200 text-sm">Edit</button>
+            </div>
+
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-medium text-gray-900">Notifications</p>
+                <p className="text-xs text-gray-500">Email updates</p>
+              </div>
+              <button className="px-3 py-2 rounded-md border border-gray-200 text-sm">Manage</button>
+            </div>
+          </div>
         </div>
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-          <input type="email" id="email" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" />
-        </div>
-        <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Save Settings</button>
-      </form>
-    </div>
-  );
+      </div>
+    </main>
+  )
 }
